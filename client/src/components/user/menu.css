@@ -1,0 +1,129 @@
+.menu-box {
+  max-width: 1100px;
+  margin: 60px auto;
+  border: 1px solid #555;
+  padding: 60px 40px;
+  position: relative;
+  background-color: #101110;
+  overflow: hidden;
+}
+
+.decor {
+  position: absolute;
+  width: 150px;
+  max-width: 25%;
+  height: auto;
+}
+
+.decor.left {
+  top: -60px;
+  left: -60px;
+}
+
+.decor.right {
+  top: -60px;
+  right: -60px;
+}
+
+.decor.left.bottom {
+  top: auto;
+  bottom: -40px;
+  left: -40px;
+}
+
+.menu-box h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #fff;
+  border-top: 2px solid #ff0000;
+  border-bottom: 2px solid #ff0000;
+  display: inline-block;
+  padding: 5px 20px;
+  margin: 40px auto;
+}
+
+.items-grid {
+  display: flex;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.col {
+  flex: 1;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.col p {
+  margin: 0 0 15px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.option {
+  text-align: center;
+  font-size: 12px;
+  color: #ccc;
+  margin-top: 40px;
+}
+
+.salads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.salad-img {
+  width: 100%;
+  max-width: 748px;
+  height: auto;
+}
+
+/* ✅ RESPONSIVE BREAKPOINTS */
+
+@media (max-width: 768px) {
+  .menu-box {
+    padding: 40px 20px;
+  }
+
+  .items-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .item {
+    font-size: 18px;
+  }
+
+  .decor {
+    display: none; /* Hide decor on small screens if needed */
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-box {
+    padding: 30px 15px;
+  }
+
+  .menu-box h2 {
+    font-size: 22px;
+  }
+
+  .item {
+    font-size: 16px;
+  }
+
+  .option {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,97 @@
+.hero {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 50px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.hero-content p {
+  font-size: 14px;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+.tabs {
+  margin-top: 20px;
+}
+
+.tabs button {
+  margin: 0 10px;
+  padding: 10px 24px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+.tabs button.active,
+.tabs button:hover {
+  background: #ffdf00;
+  color: #000;
+}
+
+/* ✅ Responsive Styles */
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 13px;
+  }
+
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tabs button {
+    margin: 5px 0;
+    padding: 10px 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 12px;
+  }
+
+  .tabs button {
+    font-size: 11px;
+    padding: 8px 16px;
+  }
+}
